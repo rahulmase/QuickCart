@@ -25,12 +25,12 @@ async function connnectDB()
         cached.promise = mongoose.connect(`${process.env.MONGODB_URI}/quickcart`, opts).then(mongoose=> {
             return mongoose
         })
-            return mongoose
+            
         
     }
 
     cached.conn = await cached.promise
-    return mongoose
+    return cached.conn
 
 }
 export default connnectDB
