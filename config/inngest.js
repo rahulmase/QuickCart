@@ -1,7 +1,7 @@
 import { Inngest } from "inngest";
 import connnectDB from "./db";
 import User from "@/models/User";
-import Order from "@/models/Oreder";
+import Order from "@/models/Order";
 
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "Quickcart-next" });
